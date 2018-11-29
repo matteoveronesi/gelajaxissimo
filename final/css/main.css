@@ -1,0 +1,10 @@
+@font-face{
+	font-family: Estave;
+    src: url(../font/Estave.ttf);
+}
+
+h1{
+    font-family: Estave;
+    text-align: center;
+    font-size: 40px;
+}
