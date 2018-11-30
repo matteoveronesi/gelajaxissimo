@@ -3,8 +3,18 @@
     src: url(../font/Estave.ttf);
 }
 
+body{
+    background: #7FECFF;
+    background: linear-gradient(0deg, #072a2b 0%, #7FECFF 100%) no-repeat center center fixed;
+}
+
+div.logo{
+    width: 600px;
+    margin: 80px auto;
+}
+
 h1{
     font-family: Estave;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }

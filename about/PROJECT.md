@@ -1,7 +1,7 @@
 # Project Description
 
 <h1 align="center">
-  <img src="src/project.png">
+  <img src="project.png">
 </h1>
 
 Lo scopo del progetto è realizzare un software che permetta da un client browser la modifica e la visualizzazione di un database remoto.
