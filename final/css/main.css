@@ -1,6 +1,10 @@
 @font-face{
-	font-family: Estave;
-    src: url(../font/Estave.ttf);
+	font-family: QS;
+    src: url(../font/quicksand.ttf);
+}
+
+*{
+    font-family: QS;
 }
 
 body{
@@ -13,8 +17,22 @@ div.logo{
     margin: 80px auto;
 }
 
-h1{
-    font-family: Estave;
+div.add{
+    width: 180px;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px #fff solid;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
-    font-size: 60px;
+    color: #072a2b;
+    transition: .4s all;
+}
+
+div.add:hover{
+    background: #7FECFF;
+    border: 1px #1b6468 solid;
 }
