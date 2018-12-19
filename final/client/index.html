@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gelajaxissimo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/icon.png">
+    <!-- bug di chrome :) -->
+    <script> </script>
+</head>
+<body>
+    <div id="particles"></div>
+    <div id="waffle"></div>
+    <div id="disabled"></div>
+
+    <header>
+        <div id="settings-box">
+            <p>
+                Neve: 
+                <label id="setsnow-box">
+                    <input id="setsnow" type="checkbox" checked>
+                </label>
+            </p>
+            <p>
+                Sfondo: 
+                <label id="setcolor-box" title="Cambia">
+                    <input id="setcolor" type="color">
+                </label>
+            </p>
+            <br><hr>
+            <p>
+                Designed by 
+                <a target="_blank" href="https://github.com/matteoveronesi">Matteo Veronesi</a>
+            </p>
+        </div>
+        <div id="settings">
+            <img src="img/snow.svg">
+        </div>
+        <div id="logo">
+            <img src="img/logo.png">
+        </div>
+    </header>
+
+    <section id="menu">
+        <div class="menu-create">
+            <span>Facciamo un Gelajaxissimo!</span>
+        </div>
+        <div class="menu-view">
+            <span>No grazie, fammi vedere la merce.</span>
+        </div>
+    </section>
+    
+    <section id="create">
+        <div class="content">
+            <div class="inputdata">
+                <h2>
+                    <span class="back backhome" title="Indietro">&#8678;</span>
+                    <span class="space">iiiiiiiiiiiii</span>
+                    Inserisci i dati        
+                </h2>
+                <input name="nome" type="text" placeholder="Nome" autocomplete="off" maxlength="25" title="Solo: lettere">
+                <input name="descrizione" type="text" placeholder="Descrizione" autocomplete="off" maxlength="255" title="Solo: lettere numeri ' , . ; :"><br>
+                <input name="costo" type="text" placeholder="Costo" autocomplete="off" maxlength="8" title="Solo: numeri">
+                <input name="produttore" type="text" placeholder="Produttore" autocomplete="off" maxlength="25" title="Solo: lettere">
+                <input name="icon" type="hidden" value="" maxlength="2"><br>
+                <button class="next">Continua</button>
+            </div>
+            <div class="inputicon">
+                <h2>
+                    <span class="back backinput" title="Indietro">&#8678;</span>
+                    <span class="space">iiiiiiiiiiiiiiiiiiiiiiii</span>
+                    Scegli un'icona
+                </h2>
+                <div class="icon-box" id="1">
+                    <img src="img/icons/1.png">
+                </div>
+                <div class="icon-box" id="2">
+                    <img src="img/icons/2.png">
+                </div>
+                <div class="icon-box" id="3">
+                    <img src="img/icons/3.png">
+                </div>
+                <div class="icon-box" id="4">
+                    <img src="img/icons/4.png">
+                </div>
+                <div class="icon-box" id="5">
+                    <img src="img/icons/5.png">
+                </div>
+                <div class="icon-box" id="6">
+                    <img src="img/icons/6.png">
+                </div>
+                <div class="icon-box" id="7">
+                    <img src="img/icons/7.png">
+                </div>
+                <div class="icon-box" id="8">
+                    <img src="img/icons/8.png">
+                </div>
+                <div class="icon-box" id="9">
+                    <img src="img/icons/9.png">
+                </div>
+                <div class="icon-box" id="10">
+                    <img src="img/icons/10.png">
+                </div>
+                <div class="icon-box" id="11">
+                    <img src="img/icons/11.png">
+                </div>
+                <div class="icon-box" id="12">
+                    <img src="img/icons/12.png">
+                </div>
+                <button class="send">Aggiungi</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="view">
+        <div class="content">
+            <div class="viewicon">
+                <h2>
+                    <span class="back backhome" title="Indietro">&#8678;</span>
+                    <span class="space">iiiiiiiiiiiiiiii</span>
+                    Gelajaxissimi disponibili
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="detalis">
+        <div class="shadow">
+            <div class="details">
+                <h2>
+                    <span class="back backview" title="Indietro">&#8678;</span>
+                    <span class="space">iiiiiiiiiiiiiiiiiiiiiii</span>
+                    Dettagli Gelajaxissimo
+                </h2>
+                <div class="details-box" id="details-icon">
+                    <img>
+                </div>
+                <div class="details-box details-data">
+                    <p>
+                        <b>ID: </b>
+                        <span id="details-data-id"></span>
+                    </p>
+                    <p>
+                        <b>Nome: </b>
+                        <span id="details-data-nome"></span>
+                    </p>
+                    <p>
+                        <b>Costo: </b>
+                        <span id="details-data-costo"></span>€
+                    </p>
+                    <p>
+                        <b>Produttore: </b>
+                        <span id="details-data-produttore"></span>
+                    </p>
+                </div>
+                <div class="details-box details-descrizione">
+                    <p>
+                        <b>Descrizione:</b><br>
+                        <span id="details-data-descrizione"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

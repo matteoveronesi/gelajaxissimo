@@ -1,0 +1,19 @@
+{
+  "name": "Gelajaxissimo",
+  "version": "0.0.0",
+  "description": "A Piffy™ AJAX inception built with MySQL and NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "postinstall": "echo \"Gelajaxissimo Installato correttamente.\""
+  },
+  "author": "Matteo Veronesi",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "express": "^4.16.4",
+    "ip": "^1.1.5",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.6"
+  }
+}
